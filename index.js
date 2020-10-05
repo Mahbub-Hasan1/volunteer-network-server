@@ -5,7 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 const ObjectId = require('mongodb').ObjectId;
 
-const uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PAss}@cluster0-shard-00-00.eqzz0.mongodb.net:27017,cluster0-shard-00-01.eqzz0.mongodb.net:27017,cluster0-shard-00-02.eqzz0.mongodb.net:27017/${process.DB_Name}?ssl=true&replicaSet=atlas-3xux2s-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.eqzz0.mongodb.net:27017,cluster0-shard-00-01.eqzz0.mongodb.net:27017,cluster0-shard-00-02.eqzz0.mongodb.net:27017/${process.DB_NAME}?ssl=true&replicaSet=atlas-3xux2s-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 const app = express()
 
